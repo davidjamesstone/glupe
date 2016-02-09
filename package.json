@@ -1,0 +1,14 @@
+{
+  "name": "glupe",
+  "version": "0.0.1",
+  "description": "Conventional hapi server composer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "glue": "3.1.0",
+    "require-directory": "2.1.1"
+  }
+}
