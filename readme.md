@@ -54,4 +54,9 @@ Save the file as `glupe-scaffold.sh`. For a website execute:
 
 or for an api project:
 
-`$ your-directory/glupe-scaffold.sh api your-api-project-name`
+`$ your-directory/glupe-scaffold.sh api your-api-project-name`.
+
+For a gov.uk based web project it's:
+
+`$ your-directory/glupe-scaffold.sh gov your-web-project-name`
+
