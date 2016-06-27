@@ -30,6 +30,9 @@ then
 elif [ $1 = 'gov' ]
 then
   git clone -b gov https://github.com/davidjamesstone/glupe-base.git $2
+elif [ $1 = 'admin' ]
+then
+  git clone -b admin https://github.com/davidjamesstone/glupe-base.git $2
 else
   git clone https://github.com/davidjamesstone/glupe-base.git $2
 fi
@@ -59,4 +62,8 @@ or for an api project:
 For a gov.uk based web project it's:
 
 `$ your-directory/glupe-scaffold.sh gov your-web-project-name`
+
+For an Admin LTE based web project it's:
+
+`$ your-directory/glupe-scaffold.sh admin your-web-project-name`
 
