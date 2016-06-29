@@ -1,25 +1,8 @@
 # glupe
 
-## Conventional hapi server composer
+## hapi server scaffold
 
-Info to follow...
-
-```js
-const Glupe = require('glupe')
-
-Glupe.compose({ location: __dirname + '/server' }, (err, server) => {
-  if (err) {
-    throw err
-  }
-
-  server.start(function () {
-    server.log('info', 'Server started')
-    console.info('Server running at:', server.info)
-  })
-})
-```
-
-Use the script to scaffold a new glupe project.
+Use the script to scaffold a new hapi project.
 
 ```shell
 #!/bin/bash 
@@ -51,7 +34,9 @@ npm i
 git init
 ```
 
-Save the file as `glupe-scaffold.sh`. For a website execute:
+Save the file as `glupe-scaffold.sh`.
+
+Then for a website execute:
 
 `$ your-directory/glupe-scaffold.sh web your-web-project-name`
 
@@ -62,6 +47,10 @@ or for an api project:
 For a gov.uk based web project it's:
 
 `$ your-directory/glupe-scaffold.sh gov your-web-project-name`
+
+For a gov.uk flood based web project it's:
+
+`$ your-directory/glupe-scaffold.sh flood your-web-project-name`
 
 For an Admin LTE based web project it's:
 
