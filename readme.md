@@ -34,6 +34,7 @@ cp config/server.example.json config/server.json
 cp config/pm2.example.json config/pm2.json
 
 npm i
+npm run build
 git init
 ```
 
