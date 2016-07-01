@@ -13,6 +13,9 @@ then
 elif [ $1 = 'gov' ]
 then
   git clone -b gov https://github.com/davidjamesstone/glupe-base.git $2
+elif [ $1 = 'flood' ]
+then
+  git clone -b flood https://github.com/davidjamesstone/glupe-base.git $2
 elif [ $1 = 'admin' ]
 then
   git clone -b admin https://github.com/davidjamesstone/glupe-base.git $2
