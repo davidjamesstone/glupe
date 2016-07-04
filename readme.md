@@ -52,4 +52,17 @@ Alternatively, run `git clone https://github.com/davidjamesstone/glupe-base.git`
 - pm2 installed globally
 
 
-Next [Getting started](getting-started.md)
+### Read next
+[Getting started](getting-started.md)
+[Basics](basics.md)
+[Configuration](config.md)
+[Server](server.md)
+[Client](client.md)
+[Linting](linting.md)
+[Logging](logging.md)
+[Manifest](manifest.md)
+[Routes](routes.md)
+[Scaffold](scaffold.md)
+[Statics](statics.md)
+[Tasks](tasks.md)
+[Views](views.md)
