@@ -1,62 +1,55 @@
 # glupe
 
-## hapi server scaffold
+## A hapi-based nodejs web server enterprise-ready project boilerplate.
 
-Use the script to scaffold a new hapi project.
+### Basics
 
-```shell
-#!/bin/bash 
+A hapi-based nodejs web server enterprise-ready project boilerplate.
 
-if [ $1 = 'api' ]
-then
-  git clone -b api https://github.com/davidjamesstone/glupe-base.git $2
-elif [ $1 = 'gov' ]
-then
-  git clone -b gov https://github.com/davidjamesstone/glupe-base.git $2
-elif [ $1 = 'flood' ]
-then
-  git clone -b flood https://github.com/davidjamesstone/glupe-base.git $2
-elif [ $1 = 'admin' ]
-then
-  git clone -b admin https://github.com/davidjamesstone/glupe-base.git $2
-else
-  git clone https://github.com/davidjamesstone/glupe-base.git $2
-fi
+Comes with these opinions out-of-the-box:
 
-cd $2
-rm -rf .git
+- [hapijs](https://github.com/hapijs/hapi)
+  - Web framework
+- [standardjs](http://standardjs.com/)
+  - Linting
+- [browserify](https://github.com/substack/node-browserify)
+  - Clientside javascript
+- [pm2](https://github.com/Unitech/pm2)
+  - Process manager
+- [handlebars](http://handlebarsjs.com/)
+  - Template engine
+- [npm-scripts](https://docs.npmjs.com/misc/scripts)
+  - Build tool
 
-perl -pi -e s,glupe-base,$2,g package.json
-perl -pi -e s,glupe-base,$2,g readme.md
-perl -pi -e s,glupe-base,$2,g config/pm2.example.json
+There are 5 different variant boilerplate types:
 
-cp config/server.example.json config/server.json
-cp config/pm2.example.json config/pm2.json
+1. api
+  - For simple api service projects
+2. web
+  - For webites
+3. gov.uk web
+  - For a gov.uk themed website
+4. gov.uk flood web
+  - For a gov.uk (flood) themed website
+5. Admin LTE dashboard
+  - For a [dashboard](https://almsaeedstudio.com/themes/AdminLTE/index2.html) website
 
-npm i
-npm run build
-git init
-```
 
-Save the file as `glupe-scaffold.sh`.
+The easiest way to create a project ois to use the [scaffold](scaffold.md) file. 
 
-Then for a website execute:
+Alternatively, run `git clone https://github.com/davidjamesstone/glupe-base.git` and checkout the correct branch.
 
-`$ your-directory/glupe-scaffold.sh web your-web-project-name`
+### Principles
 
-or for an api project:
+- Production-ready & enterprise quality
+- Keep it Simple - hapi.js is super simple but elegant and powerful too
+- Only intended as a baseline, nothing is mandated, only recommended
 
-`$ your-directory/glupe-scaffold.sh api your-api-project-name`.
+### Prerequisites
 
-For a gov.uk based web project it's:
+- node.js 4.x.x
+- npm
+- pm2 installed globally
 
-`$ your-directory/glupe-scaffold.sh gov your-web-project-name`
 
-For a gov.uk flood based web project it's:
-
-`$ your-directory/glupe-scaffold.sh flood your-web-project-name`
-
-For an Admin LTE based web project it's:
-
-`$ your-directory/glupe-scaffold.sh admin your-web-project-name`
-
+Next [Getting started](getting-started.md)
