@@ -1,7 +1,12 @@
 # Scaffold
 
-Use the script to scaffold a new hapi project.
+Use the script below to scaffold a new hapi project (Linux/MAC only).
 
+It's a simple bash script that clones a base repository, makes some replacements installs npm dependencies and runs the build.
+
+You can run these steps yourself if you wish but the scaffold makes it much easier.
+
+Save the following as `glupe-scaffold.sh`.
 
 ```shell
 #!/bin/bash 
@@ -36,8 +41,6 @@ npm i
 npm run build
 git init
 ```
-
-Save the file as `glupe-scaffold.sh`.
 
 Then for a website execute:
 

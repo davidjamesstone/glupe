@@ -21,7 +21,7 @@ Comes with these opinions out-of-the-box:
 - [npm-scripts](https://docs.npmjs.com/misc/scripts)
   - Build tool
 
-There are 5 different variant boilerplate types:
+There are 5 different boilerplate types:
 
 1. api
   - For simple api service projects
@@ -35,7 +35,7 @@ There are 5 different variant boilerplate types:
   - For a [dashboard](https://almsaeedstudio.com/themes/AdminLTE/index2.html) website
 
 
-The easiest way to create a project ois to use the [scaffold](scaffold.md) file. 
+The easiest way to create a project is to use the [scaffold](scaffold.md) file. 
 
 Alternatively, run `git clone https://github.com/davidjamesstone/glupe-base.git` and checkout the correct branch.
 
