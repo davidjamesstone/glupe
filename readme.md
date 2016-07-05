@@ -35,7 +35,7 @@ There are 5 different boilerplate types:
   - For a [dashboard](https://almsaeedstudio.com/themes/AdminLTE/index2.html) website
 
 
-The easiest way to create a project is to use the [scaffold](scaffold.md) file. 
+The easiest way to create a project is to use the [scaffold](scaffold.md) file. Read the [tutorial](getting-started.md).
 
 ### Principles
 
