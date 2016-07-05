@@ -6,7 +6,7 @@
 
   `$ dev/glupe-scaffold.sh gov my-gov`
 
-2. Once you have the project scaffolded on the command line to start the server run:
+2. Once you have the project scaffolded, on the command line to start the server run:
 
   `npm start`
 
