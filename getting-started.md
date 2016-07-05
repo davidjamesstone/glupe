@@ -126,3 +126,15 @@
 
    ![about page](about.png)
 
+
+### Read next  
+[Configuration](config.md)  
+[Server](server.md)  
+[Client](client.md)  
+[Linting](linting.md)  
+[Logging](logging.md)  
+[Manifest](manifest.md)  
+[Routes](routes.md)  
+[Statics](statics.md)  
+[Tasks](tasks.md)  
+[Views](views.md)  
