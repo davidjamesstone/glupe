@@ -4,7 +4,7 @@ const lab = exports.lab = Lab.script()
 const glupe = require('../..')
 const { manifest, options } = require('../server')
 
-lab.experiment('API test', function () {
+lab.experiment('API test', () => {
   let server
 
   // Create server before tests. No need to start
