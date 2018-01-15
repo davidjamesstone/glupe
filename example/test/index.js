@@ -1,7 +1,7 @@
 const Lab = require('lab')
 const Code = require('code')
 const lab = exports.lab = Lab.script()
-const hapy = require('../..')
+const glupe = require('../..')
 const { manifest, options } = require('../server')
 
 lab.experiment('API test', function () {
@@ -10,7 +10,7 @@ lab.experiment('API test', function () {
   // Create server before tests. No need to start
   // it though, `server.inject` will still work
   lab.before(async () => {
-    server = await hapy.compose(manifest, options)
+    server = await glupe.compose(manifest, options)
     server.initialize()
   })
 

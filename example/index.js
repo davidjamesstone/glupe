@@ -1,4 +1,4 @@
-const hapy = require('..')
+const glupe = require('..')
 const { manifest, options } = require('./server')
 
-hapy(manifest, options)
+glupe(manifest, options)
