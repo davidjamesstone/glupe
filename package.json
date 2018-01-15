@@ -1,0 +1,15 @@
+{
+  "name": "glupe",
+  "version": "1.0.2",
+  "description": "A tiny bootstrap wrapper around hapi's glue",
+  "main": "index.js",
+  "author": "davidjamesstone@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "glue": "5.0.0"
+  },
+  "devDependencies": {
+    "code": "5.1.2",
+    "lab": "15.2.0"
+  }
+}

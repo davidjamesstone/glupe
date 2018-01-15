@@ -1,65 +1,25 @@
 # glupe
 
-## A hapi-based nodejs web server enterprise-ready project boilerplate.
+`glupe` is a [tiny](index.js) wrapper around [hapi's](https://hapijs.com/) [glue](https://github.com/hapijs/glue).
 
-### Basics
+Encourages everything to be loaded as a plugin, provides the capability to start the server immediatley with minimal logging. Designed to minimise even further the boilerplate code required to start your hapi server.
 
-A hapi-based nodejs web server enterprise-ready project boilerplate.
+```js
+const glupe = require('glupe')
 
-Comes with these opinions out-of-the-box:
+// Start a server using the
+// provided manifest and options
+await glupe(manifest, options)
+```
 
-- [hapijs](https://github.com/hapijs/hapi)
-  - Web framework
-- [standardjs](http://standardjs.com/)
-  - Linting
-- [browserify](https://github.com/substack/node-browserify)
-  - Clientside javascript
-- [pm2](https://github.com/Unitech/pm2)
-  - Process manager
-- [handlebars](http://handlebarsjs.com/)
-  - Template engine
-- [npm-scripts](https://docs.npmjs.com/misc/scripts)
-  - Build tool
+The above code will compose a hapi server and start it up.
+If composing the server fails it'll throw an error.
+If the server is successfully composed but fails to start, the process exits with code 1. Some [minor logging](index.js#ln16) is also included.
 
-There are 5 different boilerplate types:
+```js
+// For testing or when you don't want to start 
+// the server, use the `compose` method, this 
+// will simply compose the server using glue.
+const server = await glupe.compose(manifest, options)
+```
 
-1. api
-  - For simple api service projects
-2. web
-  - For webites
-3. gov.uk web
-  - For a gov.uk themed website
-4. gov.uk flood web
-  - For a gov.uk (flood) themed website
-5. Admin LTE dashboard
-  - For a [dashboard](https://almsaeedstudio.com/themes/AdminLTE/index2.html) website
-
-
-The easiest way to create a project is to use the [scaffold](scaffold.md) file. Read the [tutorial](getting-started.md).
-
-### Principles
-
-- Production-ready & enterprise quality
-- Keep it Simple - hapi.js is super simple but elegant and powerful too
-- Only intended as a baseline, nothing is mandated, only recommended
-
-### Prerequisites
-
-- node.js 4.x.x
-- npm
-- pm2 installed globally
-
-
-### Read next
-[Getting started](getting-started.md)  
-[Scaffold](scaffold.md)  
-[Configuration](config.md)  
-[Server](server.md)  
-[Client](client.md)  
-[Linting](linting.md)  
-[Logging](logging.md)  
-[Manifest](manifest.md)  
-[Routes](routes.md)  
-[Statics](statics.md)  
-[Tasks](tasks.md)  
-[Views](views.md)  
