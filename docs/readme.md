@@ -53,6 +53,7 @@ Here's how to structure your project files.
   * server.json
   * schema.js
   * index.js
+  * pm2.json
 * **server**
   * **plugins**
   * **routes**
