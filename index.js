@@ -31,7 +31,7 @@ async function glupe (manifest, options) {
 
 glupe.compose = async (manifest, options) => {
   try {
-    return glue.compose(manifest, options)
+    return await glue.compose(manifest, options)
   } catch (err) {
     console.error('Failed to compose server', err)
     throw err
