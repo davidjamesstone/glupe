@@ -1,6 +1,6 @@
 {
   "name": "glupe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A tiny bootstrap wrapper around hapi's glue",
   "main": "index.js",
   "author": "davidjamesstone@gmail.com",
