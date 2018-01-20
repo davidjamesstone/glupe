@@ -20,6 +20,10 @@ perl -pi -e s,glupe-base,$2,g config/pm2.json
 cp config/server.example.json config/server.json
 
 npm i
-npm run build
-git init
 
+if [ $1 = 'gov' ]
+then
+  npm run build
+fi
+
+git init
