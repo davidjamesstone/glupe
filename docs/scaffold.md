@@ -6,7 +6,7 @@ It's a simple bash script that clones a base repository, makes some replacements
 
 You can run these steps yourself if you wish but the scaffold makes it much easier.
 
-Save the following as `glupe-scaffold.sh`.
+Save the following as something like `scaffold.sh`.
 
 ```shell
 #!/bin/bash 
@@ -33,4 +33,29 @@ cp config/server.example.json config/server.json
 npm i
 npm run build
 git init
+```
+
+Now make it executable with
+
+`$ chmod +x scaffold.sh`
+
+That's it.
+
+
+To then scaffold a boilerplate glupe based hapi app, in the directory where you want the app, do:
+
+`$ ../scaffold.sh [web|api|gov] [name]`
+
+e.g.
+
+```shell
+$ ../scaffold.sh web my-web
+
+or
+
+$ ../scaffold.sh api my-api
+
+or
+
+$ ../scaffold.sh gov my-gov
 ```
