@@ -17,6 +17,9 @@ then
 elif [ $1 = 'gov' ]
 then
   git clone -b gov https://github.com/davidjamesstone/glupe-base.git $2
+elif [ $1 = 'govuk' ]
+then
+  git clone -b govuk https://github.com/davidjamesstone/glupe-base.git $2
 else
   git clone https://github.com/davidjamesstone/glupe-base.git $2
 fi
@@ -31,7 +34,12 @@ perl -pi -e s,glupe-base,$2,g config/pm2.json
 cp config/server.example.json config/server.json
 
 npm i
-npm run build
+
+if [ $1 = 'gov' ] || [ $1 = 'govuk' ]
+then
+  npm run build
+fi
+
 git init
 ```
 
@@ -44,7 +52,7 @@ That's it.
 
 To then scaffold a boilerplate glupe based hapi app, in the directory where you want the app, do:
 
-`$ ../scaffold.sh [web|api|gov] [name]`
+`$ ../scaffold.sh [web|api|gov|govuk] [name]`
 
 e.g.
 
@@ -58,4 +66,8 @@ $ ../scaffold.sh api my-api
 or
 
 $ ../scaffold.sh gov my-gov
+
+or
+
+$ ../scaffold.sh govuk my-gov
 ```
