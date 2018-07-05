@@ -16,7 +16,8 @@ There are 3 different boilerplate types:
 
 1. [api](https://github.com/davidjamesstone/glupe-base/tree/api) - for api services
 2. [web](https://github.com/davidjamesstone/glupe-base) - for webites
-3. [gov](https://github.com/davidjamesstone/glupe-base/tree/gov) - for a gov.uk themed website
+3. [gov](https://github.com/davidjamesstone/glupe-base/tree/gov) - for a gov.uk themed website (html/handlebars)
+3. [govuk](https://github.com/davidjamesstone/glupe-base/tree/govuk) - for a gov.uk themed website (nunjucks)
 
 You can clone these from the [glupe-base](https://github.com/davidjamesstone/glupe-base) repo but the easiest way to start a new project is to use the [scaffold](scaffold.md) file below. This takes care of cloning and installing dependencies for you.
 
