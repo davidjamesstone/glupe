@@ -70,7 +70,7 @@ Here's how to structure your project files.
 Configuration files are found in the `config` directory. They are stored as JSON e.g. `server.json`.
 This file is excluded from the source control using a .gitignore entry.
 
-An example file should be included in the source control though, allowing others users to understand what settings are required but avoid including any sensitive data.
+An example file called `server.example.json` should be included in the source control though, allowing others users to understand what settings are required but avoid including any sensitive data.
 
 ### Config validation
 
@@ -87,7 +87,7 @@ By default, the config file contains a minimum of settings:
 - Server settings (e.g. port, host)
 - The [good](https://github.com/hapijs/good) logging configuration
 
-To add more settings, first change the schema file, `confg/schema.js`, and then include the values into `config/server.json`
+To add more settings, first change the schema file, `confg/schema.js`, and then include the values into `config/server.json`. Also add the new config items into `server.example.json`
 
 ### PM2
 
